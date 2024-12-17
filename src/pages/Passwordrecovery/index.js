@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import Footer from '@/components/footer';
-import styles from '../../../public/assets/scss/PasswordRecovery.scss';
 import OtpInput from 'react-otp-input';
 import { useRouter } from 'next/router';
 

@@ -4,7 +4,6 @@ import Head from 'next/head';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import Footer from '@/components/footer';
 import { useRouter } from 'next/router';  
-import styles from '../../public/assets/scss/login.scss';
 
 function Login() {
   const [email, setEmail] = useState('');

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
-import styles from '../../../public/assets/scss/completeReset.scss';
 import Footer from '@/components/footer';
 
 function Login() {

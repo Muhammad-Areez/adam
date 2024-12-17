@@ -3,8 +3,6 @@ import Image from 'next/image';
 import Head from 'next/head';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import Footer from '@/components/footer';
-import styles from '../../../public/assets/scss/CreateNewPass.scss';
-
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState(''); 

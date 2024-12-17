@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Footer from '@/components/footer';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import styles from '../../../public/assets/scss/Reset.scss';
 import { useRouter } from 'next/router';
 
 function Login() {
