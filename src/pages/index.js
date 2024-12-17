@@ -68,7 +68,7 @@ function Login() {
 
             <div className='inputGroup'>
               <label htmlFor="password" className='label'>Password</label>
-              <div className='passwordContainer'>
+              <div className='passwordContainerSec'>
                 <input
                   type={showPassword ? 'text' : 'password'}
                   id="password"
@@ -80,7 +80,7 @@ function Login() {
                 />
                 <span
                   onClick={togglePasswordVisibility}
-                  className='eyeIcon'
+                  className='eyeIcon2'
                 >
                   {showPassword ? <FaEyeSlash size={20} /> : <FaEye size={20} />}
                 </span>

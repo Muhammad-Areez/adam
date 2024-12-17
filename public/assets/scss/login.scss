@@ -77,14 +77,15 @@ $input-focus-border-color: #00cc99;
   }
 }
 
-.passwordContainer {
+.passwordContainerSec {
   position: relative;
   width: 100%;
+  display: flex;
 }
 
-.eyeIcon {
+.eyeIcon2 {
   position: absolute;
-  right: 15px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
