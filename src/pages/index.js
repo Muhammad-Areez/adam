@@ -42,7 +42,7 @@ function Login() {
       <div className='container'>
         <div className='formContainer'>
           <Image
-            src="/assets/images/loginImg.png"
+            src="/assets/images/LoginImg.png"
             alt="Login Image"
             width={150}
             height={90}
