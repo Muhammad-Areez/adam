@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -39,4 +39,11 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../public/assets/fonts/Inter.ttf');
+  font-weight: normal;
+  font-style: normal;
 }

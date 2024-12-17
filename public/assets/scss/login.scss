@@ -1,0 +1,157 @@
+/* Login.module.scss */
+
+$primary-color: rgba(0, 102, 102, 1);
+$input-border-color: #ccc;
+$input-focus-border-color: #00cc99;
+
+.container {
+  background-color: rgba(249, 250, 251, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+.formContainer {
+  text-align: center;
+  padding: 20px;
+  max-width: 450px;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-family: 'Inter';
+  text-align: left;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+    font-family: 'Inter';
+    font-weight: 400;
+  text-align: left;
+  font-size: 16px;
+  color: rgba(107, 114, 128, 1);
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: '100%';
+}
+
+.label {
+    font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input {
+    height: 40px;
+    width:92%;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid $input-border-color;
+  outline: none;
+  padding-inline: 15px;
+
+  &:focus {
+    border-color: $input-focus-border-color;
+  }
+}
+
+.passwordContainer {
+  position: relative;
+  width: 100%;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+}
+
+.forgotPassword {
+    font-family: 'Inter';
+    font-weight: 400;
+  font-size: 14px;
+  color: rgba(107, 114, 128, 1);
+  text-align: left;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.BelowTextContainer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.createText {
+  color: $primary-color;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.checkbox {
+  margin-right: 8px;
+}
+
+.checkboxLabel {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Inter';
+}
+
+.image {
+    margin-right: 10px; 
+    display: flex;
+    align-items: center; 
+    margin-bottom: 35px;
+  }
+
+.lowerText{
+  font-family: 'Inter';
+  font-size: 13px;
+  color: rgba(75, 85, 99, 1);
+}
