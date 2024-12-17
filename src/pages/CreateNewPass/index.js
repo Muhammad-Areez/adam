@@ -132,7 +132,7 @@ function Login() {
                 {leftChecks.map((check, index) => (
                   <div key={index} className='ImgTextItem'>
                     <Image
-                      src={check.isValid ? '/assets/images/CheckBoxImg.png' : '/assets/images/UnfilledCheckBoxImg.png'}
+                      src={check.isValid ? '/assets/images/CheckBoxImg.png' : '/assets/images/unfilledCheckBoxImg.png'}
                       height={20}
                       width={20}
                       layout="intrinsic"
