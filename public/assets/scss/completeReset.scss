@@ -19,7 +19,7 @@ $input-focus-border-color: #00cc99;
   width: 100%;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 4px rgba(0.2, 0.2, 0.2, 0.2);
 }
 
 .title {
@@ -162,4 +162,9 @@ $input-focus-border-color: #00cc99;
 
 .coloreText {
     color: $primary-color
+}
+
+.lowerText {
+  font-family: 'Inter';
+  font-size: 13px;
 }

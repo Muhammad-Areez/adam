@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import Footer from '@/components/footer';
+import { useRouter } from 'next/router';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState(''); 
@@ -12,6 +13,7 @@ function Login() {
   const [rememberMe, setRememberMe] = useState(false);
   const [time, setTime] = useState(60); 
   const [isActive, setIsActive] = useState(true);
+  const Router = useRouter()
 
   useEffect(() => {
     if (time === 0) {
@@ -42,6 +44,10 @@ function Login() {
   const handleCheckboxChange = () => {
     setRememberMe((prevState) => !prevState);
   };
+
+  const handleResetPass = () => {
+    Router.push('./CompleteReset')
+  }
 
   const minLengthCheck = password.length >= 8;
   const lowercaseCheck = /[a-z]/.test(password);
@@ -156,7 +162,7 @@ function Login() {
               </div> 
             </div>
 
-            <button type="submit" className='button'>Reset Password</button>
+            <button type="submit" className='button' onClick={handleResetPass}>Reset Password</button>
             <div>
               <p className='lowerText'>Didn't receive a code? <span className='coloreText'>Resend code in {time}s</span></p>
             </div>
